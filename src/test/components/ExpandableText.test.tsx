@@ -1,9 +1,5 @@
-import React from "react";
-import { it, expect, describe } from "vitest";
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import ExpandableText from "../../src/components/ExpandableText";
-import "@testing-library/jest-dom/vitest";
+import { render, userEvent, screen } from "../../utils/test-utils";
+import ExpandableText from "../../components/ExpandableText";
 
 describe("ExpandableText", () => {
   const limit = 255;

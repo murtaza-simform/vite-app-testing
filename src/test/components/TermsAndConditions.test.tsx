@@ -1,9 +1,5 @@
-import React from "react";
-import { it, expect, describe } from "vitest";
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import TermsAndConditions from "../../src/components/TermsAndConditions";
-import "@testing-library/jest-dom/vitest";
+import { render, screen, userEvent } from "../../utils/test-utils";
+import TermsAndConditions from "../../components/TermsAndConditions";
 
 describe("TermsAndConditions", () => {
   const renderComponent = () => {
